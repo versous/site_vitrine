@@ -1,0 +1,157 @@
+:root {
+  --forest: #174c3a;
+  --brick: #9d4635;
+  --gold: #f2b84b;
+  --cream: #fbf7ef;
+  --ink: #22302c;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+}
+
+.navbar {
+  background: rgba(23, 76, 58, 0.97);
+}
+
+.navbar-brand,
+.navbar .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--gold);
+}
+
+.brand-mark {
+  width: 36px;
+  height: 36px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--gold);
+  color: var(--forest);
+  font-weight: 800;
+}
+
+.hero-slide {
+  min-height: 74vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-slide::before,
+.page-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(13, 39, 31, 0.82), rgba(13, 39, 31, 0.22));
+}
+
+.hero-content,
+.page-hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  max-width: 720px;
+  font-size: clamp(2.3rem, 6vw, 4.9rem);
+  font-weight: 800;
+  line-height: 1.02;
+}
+
+.section-title {
+  color: var(--forest);
+  font-weight: 800;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--brick);
+  --bs-btn-border-color: var(--brick);
+  --bs-btn-hover-bg: #80372a;
+  --bs-btn-hover-border-color: #80372a;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--forest);
+  --bs-btn-border-color: var(--forest);
+  --bs-btn-hover-bg: var(--forest);
+  --bs-btn-hover-border-color: var(--forest);
+}
+
+.feature-card,
+.service-card,
+.contact-panel {
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(34, 48, 44, 0.1);
+}
+
+.feature-card img,
+.service-card img {
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.badge-soft {
+  background: rgba(242, 184, 75, 0.22);
+  color: #6e4a00;
+}
+
+.page-hero {
+  min-height: 42vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.accordion-button:not(.collapsed) {
+  background: rgba(23, 76, 58, 0.1);
+  color: var(--forest);
+}
+
+.footer {
+  background: #102b22;
+  color: #f7efe2;
+}
+
+.footer a {
+  color: #f7efe2;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--gold);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 0.25rem rgba(242, 184, 75, 0.28);
+}
+
+.map-box {
+  min-height: 260px;
+  background:
+    linear-gradient(135deg, rgba(23, 76, 58, 0.9), rgba(157, 70, 53, 0.72)),
+    repeating-linear-gradient(45deg, transparent 0 20px, rgba(255, 255, 255, 0.08) 20px 22px);
+  border-radius: 8px;
+}
+
+@media (max-width: 767.98px) {
+  .hero-slide {
+    min-height: 64vh;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+}

@@ -1,64 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/style.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bistro des Tilleuls | Accueil</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <title>bistro des loisir</title>
-    </head>
-<body>
-    <nav>
-        <a href="index.html">
-            <svg width="190" height="54" viewBox="0 0 190 54" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Bistro des Tilleuls">
-                <rect width="190" height="54" rx="8" fill="#174c3a"/>
-                <circle cx="28" cy="27" r="17" fill="#f2b84b"/>
-                <path d="M22 20h8c4 0 7 2 7 5s-3 5-7 5h-3v7h-5V20zm5 4v2h3c1.3 0 2-.4 2-1s-.7-1-2-1h-3z" fill="#174c3a"/>
-                <path d="M39 17c5 2 8 6 8 11 0 7-5 13-12 15 2-4 3-8 3-13 0-4 0-8 1-13z" fill="#ffffff" opacity="0.92"/>
-                <path d="M45 21c5 4 7 10 5 16-3-3-5-7-5-12v-4z" fill="#f2b84b"/>
-                <text x="58" y="25" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Bistro des</text>
-                <text x="58" y="42" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" fill="#f2b84b">loisir</text>
-            </svg>
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+          <span class="brand-mark">BT</span>
+          Bistro des Tilleuls
         </a>
-
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="menu-icon" aria-label="Ouvrir le menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-
-        <div class="lien">
-            <a href="apropos.html">À propos</a>
-            <a href="service.html">Services</a>
-            <a href="contact.html">Contact</a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Ouvrir le menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="apropos.html">À propos</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
         </div>
+      </div>
     </nav>
-    <header>
-        
-    </header>
-    <article>
-        <div class="main">
-            <div class="description">
-                <h2>Nos Services</h2>
-                <p>Notre PME locale met en avant les producteurs de la région </p>
-                <p>et propose une cuisine simple, généreuse et professionnelle.</p>
-                <p>Découvrez nos différents services et offres spéciales.</p>
-            </div>
-            
-            <div class="case">
-                <h2>Menu frais</h2>
-                <p>Plats de saison préparés chaque matin.</p>
-            </div>
-            <div class="case">
 
+    <header id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="hero-slide d-flex align-items-center text-white" style="background-image: url('assets/img/hero-restaurant.png');">
+            <div class="container hero-content">
+              <span class="badge badge-soft rounded-pill mb-3">Restaurant local</span>
+              <h1 class="hero-title">Une table de quartier, chaleureuse et faite maison.</h1>
+              <p class="lead col-lg-6 mt-3">Le Bistro des Tilleuls accueille les habitants, les familles et les professionnels autour d'une cuisine saisonnière.</p>
+              <a href="contact.html" class="btn btn-primary btn-lg mt-3">Réserver une table</a>
             </div>
-            <div class="case">
-
-            </div>
+          </div>
         </div>
-        
+        <div class="carousel-item">
+          <div class="hero-slide d-flex align-items-center text-white" style="background-image: url('assets/img/terrasse.png');">
+            <div class="container hero-content">
+              <h2 class="hero-title">Déjeuners rapides et terrasse calme.</h2>
+              <p class="lead col-lg-6 mt-3">Un menu du midi renouvelé chaque semaine avec des produits frais et accessibles.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="hero-slide d-flex align-items-center text-white" style="background-image: url('assets/img/traiteur.png');">
+            <div class="container hero-content">
+              <h2 class="hero-title">Traiteur pour vos moments importants.</h2>
+              <p class="lead col-lg-6 mt-3">Buffets, plateaux et repas de groupe préparés selon votre budget.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Précédent</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Suivant</span>
+      </button>
+    </header>
 
-    </article>
-</body>
+    <main>
+      <section class="container py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-5">
+            <h2 class="section-title">Bienvenue au Bistro des Tilleuls</h2>
+            <p>Notre PME locale met en avant les producteurs de la région et propose une cuisine simple, généreuse et professionnelle.</p>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="card feature-card h-100 p-3">
+                  <h3 class="h5">Menu frais</h3>
+                  <p class="mb-0">Plats de saison préparés chaque matin.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card feature-card h-100 p-3">
+                  <h3 class="h5">Réservation</h3>
+                  <p class="mb-0">Accueil pour repas privés et professionnels.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card feature-card h-100 p-3">
+                  <h3 class="h5">Traiteur</h3>
+                  <p class="mb-0">Solutions souples pour événements locaux.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-white">
+        <div class="container">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4">
+            <div>
+              <span class="badge badge-soft rounded-pill mb-2">Nos spécialités</span>
+              <h2 class="section-title mb-0">Des offres simples à comprendre</h2>
+            </div>
+            <a class="btn btn-outline-primary" href="services.html">Voir les services</a>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card service-card h-100">
+                <img src="assets/img/terrasse.png" alt="Terrasse du restaurant">
+                <div class="card-body">
+                  <h3 class="h5">Déjeuner du midi</h3>
+                  <p>Formules équilibrées pour manger vite et bien pendant la pause.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card service-card h-100">
+                <img src="assets/img/traiteur.png" alt="Service traiteur">
+                <div class="card-body">
+                  <h3 class="h5">Traiteur local</h3>
+                  <p>Plateaux, buffets et desserts maison pour vos réunions.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card service-card h-100">
+                <img src="assets/img/equipe.png" alt="Equipe du restaurant">
+                <div class="card-body">
+                  <h3 class="h5">Repas de groupe</h3>
+                  <p>Organisation de soirées privées jusqu'à 45 personnes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer py-4">
+      <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+        <span>© 2026 Bistro des Tilleuls</span>
+        <span>12 place du Marché · contact@bistro-tilleuls.fr · 01 45 22 18 90</span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
